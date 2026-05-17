@@ -6,6 +6,7 @@ import AccountToggle from "@/components/AccountToggle";
 import SignOutButton from "@/components/SignOutButton";
 import ThemeToggle from "@/components/ThemeToggle";
 import UserAvatar from "@/components/UserAvatar";
+import KeyboardShortcuts from "@/components/KeyboardShortcuts";
 
 interface UserSettings {
   is_public: boolean;
@@ -57,6 +58,7 @@ export default function DashboardHeader() {
               Share Profile
             </a>
           )}
+          <KeyboardShortcuts />
           <UserAvatar />
           <ThemeToggle />
           <SignOutButton />
